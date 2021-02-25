@@ -1,5 +1,7 @@
 {
   "testFiles": "**/*.feature",
-  "defaultCommandTimeout": 60000
-
+  "defaultCommandTimeout": 60000,
+  "env": {
+    "device": "default"
+  }
 }

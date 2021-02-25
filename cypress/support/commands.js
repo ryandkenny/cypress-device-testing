@@ -36,8 +36,34 @@ function callback(violations) {
     });
 }
 
-Cypress.Commands.add("checkPageA11y", () => {
-    cy.injectAxe();
-    cy.checkA11y(null, null, callback, true);
+function setDevice() {
+    let device = Cypress.env('device')
+    switch (device) {
+        case 'IPhoneXR':
+            cy.viewport(414, 896)
+            break
+        case 'IPhone7':
+            cy.viewport(375, 667)
+            break
+        case 'IPhone8+':
+            cy.viewport(414, 736)
+            break
+        default:
+            break
+    }
+}
+
+Cypress.Commands.add("setDevice", () => {
+    setDevice()
 })
+
+
+Cypress.Commands.add("checkPageA11y", () => {
+    cy.injectAxe()
+    cy.checkA11y(null, null, callback, true)
+})
+
+
+
+
 
