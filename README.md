@@ -1,5 +1,5 @@
 # cypress-device-testing
-##Steps to run 
+# Steps to run 
 - Clone repo
 - Ensure you have node.js installed https://nodejs.org/en/download/
 - Run *./node_modules/.bin/cypress install --force*  
@@ -13,13 +13,13 @@
 
 Now you should be able to run cypress using the *npx cypress open* command
 
-#Accessibility Testing
+# Accessibility Testing
 A custom command has been added with axe integration for accessibility testing with custom reporting.
 
 Adding cy.checkPageA11y to each new page hit should run axe accessibility testing with custom reporting
 output colour coded based on severity. Code is available in support/commands.js
 
-#Device Testing
+# Device Testing
 Device testing is done via passing in an environment variable from the command line
 e.g. *npx cypress open --env device=IPhone8+*
 
