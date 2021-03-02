@@ -1,5 +1,5 @@
 {
-  "name": "cypress",
+  "name": "cypress1",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,24 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "- Clone repo - Ensure you have node.js installed https://nodejs.org/en/download/ - Run 'npm install cypress --save-dev' - run npx open, often you will not have executable permissions, to fix this run chmod 755 *Directory-name*     For example mine was:          *chmod 755 /Users/ryan/Library/Caches/Cypress/6.6.0/Cypress.app/Contents/MacOS/Cypress* -  Install cypress-axe: *npm install --save-dev cypress-axe* -  Install peer dependencies: *npm install --save-dev cypress axe-core*",
   "devDependencies": {
     "axe-core": "^4.1.2",
+    "cypress": "^6.6.0",
     "cypress-axe": "^0.12.2",
     "cypress-cucumber-preprocessor": "^4.0.1",
     "cypress-intellij-reporter": "0.0.6"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryandkenny/cypress-device-testing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryandkenny/cypress-device-testing/issues"
+  },
+  "homepage": "https://github.com/ryandkenny/cypress-device-testing#readme"
 }
